@@ -17,7 +17,7 @@ export default function TitleScreen({ onStart }: TitleScreenProps) {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen px-4 text-center">
       {/* ASCII Title */}
-      <pre className="text-crt-green crt-glow mb-6 select-none whitespace-pre" style={{ fontSize: 'min(1.8vw, 1rem)', lineHeight: 1.3, fontFamily: "'Courier New', Courier, monospace" }}>
+      <pre className="text-crt-green mb-6 select-none whitespace-pre" style={{ fontSize: 'min(1.8vw, 1rem)', lineHeight: 1.5, fontFamily: "'Courier New', Courier, monospace" }}>
         {ASCII_TITLE}
       </pre>
 
