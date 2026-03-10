@@ -4,7 +4,7 @@ import CRTEffect from '@/components/CRTEffect'
 
 export const metadata: Metadata = {
   title: 'The Ouray Trail',
-  description: 'You have died of low vert.',
+  description: 'You have died of vert.',
 }
 
 export default function RootLayout({

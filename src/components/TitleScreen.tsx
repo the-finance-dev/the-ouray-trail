@@ -28,7 +28,7 @@ export default function TitleScreen({ onStart }: TitleScreenProps) {
 
       {/* Tagline */}
       <p className="text-2xl text-crt-amber animate-blink mb-12">
-        You have died of low vert.
+        You have died of vert.
       </p>
 
       {/* Start Button */}

@@ -5,7 +5,7 @@
 // Triggered when health or hydration hits 0.
 
 export const deathMessages: string[] = [
-  'You died of low vert.',
+  'You died of vert.',
   'You trusted the weather forecast.',
   'You tried to race a Hardrocker downhill.',
   'Your feet filed a formal grievance. Then seceded.',

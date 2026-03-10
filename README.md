@@ -2,7 +2,7 @@
 
 A browser-based parody survival game inspired by Oregon Trail, themed around the Ouray 100 ultramarathon and the general absurdity of mountain ultrarunning.
 
-> "You have died of low vert."
+> "You have died of vert."
 
 ## Stack
 
