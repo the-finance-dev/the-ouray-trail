@@ -17,7 +17,7 @@ export default function TitleScreen({ onStart }: TitleScreenProps) {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen px-4 text-center">
       {/* ASCII Title */}
-      <pre className="text-crt-green crt-glow text-xs sm:text-sm md:text-base leading-tight mb-6 select-none">
+      <pre className="text-crt-green crt-glow text-[0.5rem] sm:text-sm md:text-base leading-tight mb-6 select-none overflow-x-auto max-w-full">
         {ASCII_TITLE}
       </pre>
 
