@@ -1,0 +1,110 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Import VT323 font from Google */
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+/* Base styles */
+body {
+  font-family: 'VT323', 'Courier New', monospace;
+  background: #0a0a0a;
+  color: #33ff33;
+  min-height: 100vh;
+}
+
+/* CRT scanline overlay */
+.crt-overlay {
+  position: fixed; top: 0; left: 0; right: 0; bottom: 0;
+  pointer-events: none; z-index: 50;
+  background: repeating-linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.15) 0px,
+    rgba(0, 0, 0, 0.15) 1px,
+    transparent 1px,
+    transparent 3px
+  );
+}
+
+/* CRT screen glow */
+.crt-glow {
+  text-shadow: 0 0 5px rgba(51, 255, 51, 0.3);
+}
+
+/* ASCII-style border box */
+.terminal-box {
+  border: 1px solid #33ff33;
+  padding: 1rem;
+  position: relative;
+}
+
+.terminal-box-amber { border-color: #ffb000; }
+.terminal-box-red { border-color: #ff4444; }
+
+/* Stat bar */
+.stat-bar {
+  height: 12px;
+  background: #1a1a1a;
+  border: 1px solid #33ff33;
+}
+
+.stat-bar-fill {
+  height: 100%;
+  transition: width 0.5s ease;
+}
+
+/* Button styles */
+.terminal-btn {
+  border: 1px solid #33ff33;
+  color: #33ff33;
+  background: transparent;
+  padding: 0.5rem 1.5rem;
+  font-family: 'VT323', monospace;
+  font-size: 1.25rem;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+.terminal-btn:hover {
+  background: #33ff33;
+  color: #0a0a0a;
+}
+
+.terminal-btn-amber {
+  border-color: #ffb000;
+  color: #ffb000;
+}
+
+.terminal-btn-amber:hover {
+  background: #ffb000;
+  color: #0a0a0a;
+}
+
+/* Selection highlight */
+.selected {
+  background: rgba(51, 255, 51, 0.15);
+}
+
+/* Typewriter cursor */
+.cursor-blink::after {
+  content: '\2588';
+  animation: blink 1s step-end infinite;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+/* Progress bar */
+.progress-track {
+  height: 8px;
+  background: #1a1a1a;
+  border: 1px solid #33ff33;
+}
+
+.progress-fill {
+  height: 100%;
+  background: #33ff33;
+  transition: width 0.8s ease;
+}
