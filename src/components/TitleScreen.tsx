@@ -5,18 +5,19 @@ interface TitleScreenProps {
 }
 
 const ASCII_TITLE = `
-  _____ _           ___                       _____         _ _
- |_   _| |_  ___   / _ \\ _  _ _ _ __ _ _  _  |_   _| _ __ _(_) |
-   | | | ' \\/ -_) | (_) | || | '_/ _\` | || |   | || '_/ _\` | | |
-   |_| |_||\\_\\___| \\___/ \\_,_|_| \\__,_|\\_, |   |_||_| \\__,_|_|_|
-                                       |__/
+  _____ _             ___                            _____          _ _
+ |_   _| |__   ___   / _ \\ _   _ _ __ __ _ _   _    |_   _| __ __ _(_) |
+   | | | '_ \\ / _ \\ | | | | | | | '__/ _\` | | | |     | || '__/ _\` | | |
+   | | | | | |  __/ | |_| | |_| | | | (_| | |_| |     | || | | (_| | | |
+   |_| |_| |_|\\___|  \\___/ \\__,_|_|  \\__,_|\\__, |     |_||_|  \\__,_|_|_|
+                                           |___/
 `.trim()
 
 export default function TitleScreen({ onStart }: TitleScreenProps) {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen px-4 text-center">
       {/* ASCII Title */}
-      <pre className="text-crt-green crt-glow mb-6 select-none whitespace-pre" style={{ fontSize: 'min(2.4vw, 1rem)', lineHeight: 1.3, fontFamily: "'Courier New', Courier, monospace" }}>
+      <pre className="text-crt-green crt-glow mb-6 select-none whitespace-pre" style={{ fontSize: 'min(1.8vw, 1rem)', lineHeight: 1.3, fontFamily: "'Courier New', Courier, monospace" }}>
         {ASCII_TITLE}
       </pre>
 
